@@ -13,9 +13,44 @@
     color: var(--main-color);
 }
 
-body {
+#nav 
+{
+    display: grid;
+    grid-template-columns: 2fr 7fr 1.5fr 1fr 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: 
+    "logo none hebergement activités sinscrire";
+}
+
+.logo
+{
+    grid-area: logo;
     display: flex;
-    justify-content: center;
+    align-items: center;
+}
+
+.Hébergements
+{
+    grid-area: hebergement;
+    text-decoration: none;
+    color:black;
+    padding: 25px;
+    width: 115px;
+}
+
+.activités
+{
+    grid-area: activités;
+    text-decoration: none;
+    color:  black;
+    padding: 25px;
+    width: 70px;
+}
+
+.Hébergements:active, .activités:active
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC ;
 }
 
 .main-container {
@@ -23,6 +58,460 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+#SousTitre
+{
+    font-size: 18px;
+}
+
+#BarreRecherche
+{
+    margin-bottom: 30px;
+    display: flex;
+    height: 50px;
+}
+
+.icone
+{
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px;
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.ZoneRecherche
+{
+    border: 1px solid #F2F2F2 ;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.texteRecherche 
+{
+    border: #F2F2F2 ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+#menufiltre
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.filtres
+{
+    display: flex;
+    width: 60vw;
+}
+.filtres :hover
+{
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
+
+
+.titrefiltre
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.filtre1
+{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    padding-right: 25px;
+    padding-left: 0px;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+}
+
+.filtre1 i
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 15px 15px 15px 15px;
+    margin-right: 10px;
+    color: #0065FC ;
+    background-color: #DEEBFF;
+}
+
+.filtre1 p
+{
+    font-weight: bold;
+}
+
+
+.filtre2
+{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    padding-right: 25px;
+    padding-left: 0px;
+    height: 50px;
+    width: 110px;
+    margin: 10px;
+
+}
+
+.filtre2 i
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 15px 15px 15px 15px;
+    margin-right: 10px;
+    color: #0065FC ;
+    background-color: #DEEBFF;
+}
+
+.filtre2 p
+{
+    font-weight: bold;
+}
+
+.filtre3
+{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    padding-right: 25px;
+    padding-left: 0px;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+}
+
+.filtre3 i
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 15px 15px 15px 15px;
+    margin-right: 10px;
+    color: #0065FC ;
+    background-color: #DEEBFF;
+}
+
+.filtre3 p
+{
+    font-weight: bold;
+}
+
+.filtre4
+{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    padding-right: 25px;
+    padding-left: 0px;
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+}
+
+.filtre4 i
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 15px 15px 15px 15px;
+    margin-right: 10px;
+    color: #0065FC ;
+    background-color: #DEEBFF;
+}
+
+.filtre4 p
+{
+    font-weight: bold;
+}
+
+.filtre p
+{
+    margin-left: 20px;
+}
+
+.info
+{
+    display: flex;  
+    padding-bottom: 30px;   
+}
+
+.info i
+{ 
+    color: #0065FC;
+    font-size: 12px;
+    border: 2px solid #F2F2F2;
+    border-radius: 100px; 
+    padding: 5px 7px 7px; 
+    margin-top: 15px;
+    margin-right: 8px;
+    height: 10px;
+}
+
+#element1
+{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    height: 600px;
+    width: 65vw;
+    margin-right: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.CartesHebergements
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "carte1 carte2 carte3"
+    "carte4 carte5 carte6";
+    grid-gap: 35px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.Carte1
+{
+    grid-area: carte1;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 200px;
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "description";
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.Carte1 .divImg
+{
+    grid-area: img;
+    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.Carte1 .divDescription
+{
+    grid-area: description;
+    font-size: 11px;
+    background-color: white; 
+    padding-left: 10px; 
+}
+
+.Carte2
+{
+    grid-area: carte2;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 200px;
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "description";
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.Carte2 .divImg
+{
+    grid-area: img;
+    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Carte2 .divDescription
+{
+    grid-area: description;
+    font-size: 11px;
+    background-color: white;
+    padding-left: 10px; 
+}
+
+.Carte3
+{
+    grid-area: carte3;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 200px;
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "description";
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.Carte3 .divImg
+{
+    grid-area: img;
+    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50% ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.Carte3 .divDescription
+{
+    grid-area: description;
+    font-size: 11px;
+    background-color: white;
+    padding-left: 10px; 
+}
+
+.Carte4
+{
+    grid-area: carte4;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 200px;
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "description";
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.Carte4 .divImg
+{
+    grid-area: img;
+    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.Carte4 .divDescription
+{
+    font-size: 11px;
+    background-color: white;
+    grid-area: description;
+    padding-left: 10px; 
+}
+
+.Carte5
+{
+    grid-area: carte5;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 200px;
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "description";
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.Carte5 .divImg
+{
+    grid-area: img;
+    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.Carte5 .divDescription
+{
+    grid-area: description;
+    font-size: 11px;
+    background-color: white;
+    padding-left: 10px;   
+}
+
+.Carte6
+{
+    grid-area: carte6;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 200px;
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "description";
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.Carte6 .divImg
+{
+    grid-area: img;
+    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Carte6 .divDescription
+{
+    grid-area: description;
+    font-size: 11px;
+    background-color: white;
+    padding-left: 10px; 
 }
 
 .section-title {
@@ -114,6 +603,208 @@ body {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+#CartesActivités
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "carte10 carte11 carte13 carte14"
+    "carte10 carte11 carte13 carte14";
+    grid-gap: 30px; 
+}
+
+.Carte10
+{
+    grid-area: carte10;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "description";  
+    cursor: pointer;
+    box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+}
+
+.Carte10 .divImg
+{
+    grid-area: img ;
+    background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.Carte10 .divDescription
+{
+    grid-area: description;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px transparent solid;
+}
+
+.Carte11
+{
+    grid-area: carte11;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "description";  
+    cursor: pointer;
+    box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+    
+}
+
+.Carte11 .divImg
+{
+    grid-area: img ;
+    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.Carte11 .divDescription
+{
+    grid-area: description;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px transparent solid;
+}
+ 
+.Carte13
+{
+    grid-area: carte13;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 450px;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "description";  
+    cursor: pointer;
+    box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+}
+
+.Carte13 .divImg
+{
+    grid-area: img ;
+    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.Carte13 .divDescription
+{
+    grid-area: description;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px transparent solid;
+}
+
+.Carte14
+{
+    grid-area: carte14;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "description";  
+    cursor: pointer;
+    box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+}
+
+.Carte14 .divImg
+{
+    grid-area: img ;
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.Carte14 .divDescription
+{
+    grid-area: description;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px transparent solid;
+}
+  
+.footer 
+{
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 100%;
+    list-style: none;
+}
+.footerBlocs 
+{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 200px;  
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.footerBlocs div ul
+{
+    padding-left: 0%;
+}
+
+.footer div li
+{
+    list-style: none;
+    margin-bottom: 15px;  
 }
 
 
