@@ -230,7 +230,7 @@
     padding-right: 25px;
     padding-left: 0px;
     height: 50px;
-    width: 200px;
+    width: 150px;
     margin: 10px;
 }
 
@@ -313,6 +313,13 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+.Carte1 .divImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
 .Carte1 .divDescription
 {
@@ -351,6 +358,15 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+.Carte2 .divImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 .Carte2 .divDescription
 {
     grid-area: description;
@@ -382,9 +398,12 @@
 .Carte3 .divImg
 {
     grid-area: img;
-    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 50% ;
+}
+
+.Carte3 .divImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -420,9 +439,12 @@
 .Carte4 .divImg
 {
     grid-area: img;
-    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
+}
+
+.Carte4 .divImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -458,9 +480,12 @@
 .Carte5 .divImg
 {
     grid-area: img;
-    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
+}
+
+.Carte5 .divImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -496,12 +521,16 @@
 .Carte6 .divImg
 {
     grid-area: img;
-    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
+}
+
+.Carte6 .divImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .Carte6 .divDescription
 {
     grid-area: description;
