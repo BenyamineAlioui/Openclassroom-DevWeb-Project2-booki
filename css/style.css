@@ -20,7 +20,6 @@
     grid-template-rows: 3fr;
     grid-template-areas: 
     "logo none hebergement activités sinscrire";
-    padding: 30px 0px 5px 50px;
 }
 
 .logo
@@ -28,6 +27,7 @@
     grid-area: logo;
     display: flex;
     align-items: center;
+    padding-left: 50px;
     
 }
 
@@ -539,6 +539,14 @@
     padding-left: 10px; 
 }
 
+.icone-white{
+    color: #f2f2f2;
+}
+
+.icone-blue{
+    color: #0065FC;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -708,9 +716,6 @@
 .Carte11 .divImg
 {
     grid-area: img ;
-    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
 .Carte11 .divDescription
@@ -746,9 +751,6 @@
 .Carte13 .divImg
 {
     grid-area: img ;
-    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
 .Carte13 .divDescription
@@ -785,9 +787,6 @@
 .Carte14 .divImg
 {
     grid-area: img ;
-    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
 .Carte14 .divDescription
