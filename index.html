@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,8 +19,10 @@
     <header>
         <nav id="nav"> 
             <a class="logo" href="index.html"><img src="images/logo/Booki@3x.png" alt="logo du site"></a>   
-            <a class="Hébergements" href="#hébergements">Hébergements</a>
-            <a class="activités" href="#activités">Activités</a>  
+            <div class="ongletsMenu">
+                <a class="Hébergements" href="#hébergements">Hébergements</a>
+                <a class="activités" href="#activités">Activités</a>
+            </div>  
         </nav>
     </header>
 
@@ -36,8 +38,9 @@
                 
                 <div class="icone"><i class="fas fa-map-marker-alt fa-lg"></i></div>
                 <form method= "post" action= "traitement.php">
-                   <input class="ZoneRecherche" type="search" name="Recherche" size="20" placeholder= "Marseille, France" /></form>
-                   <input class="texteRecherche" type="submit" value="Rechercher" /> 
+                   <input class="ZoneRecherche" type="search" name="Recherche" size="20" placeholder= "Marseille, France" ></form>
+                   <input class="texteRecherche" type="submit" value="Rechercher" > 
+                   <div class="icone2"><i class="fas fa-search fa-lg"></i></div>
               </div>
     
               <div id="menufiltre">
@@ -67,7 +70,7 @@
                                </div>
                                <div class="divDescription">
                                     <h3>Hôtel du port</h3>
-                                    <p>Nuit à partire de <strong>52€</strong></p>
+                                    <p>Nuit à partir de <strong>52€</strong></p>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue" ></i>
                                     <i class="fas fa-star icone-blue" ></i>
@@ -81,7 +84,7 @@
                                 </div>
                                 <div class="divDescription">
                                     <h3>Hôtel chez Amina</h3>
-                                    <p>Nuit à partire de <strong>96€</strong></p>
+                                    <p>Nuit à partir de <strong>96€</strong></p>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
@@ -95,7 +98,7 @@
                                 </div>
                                 <div class="divDescription">
                                     <h3>Hôtel Les mouettes</h3>
-                                    <p>Nuit à partire de <strong>76€</strong></p>
+                                    <p>Nuit à partir de <strong>76€</strong></p>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
@@ -109,7 +112,7 @@
                                 </div>
                                 <div class="divDescription">
                                     <h3>Hôtel de la mer</h3>
-                                    <p>Nuit à partire de <strong>46€</strong></p>
+                                    <p>Nuit à partir de <strong>46€</strong></p>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
@@ -123,7 +126,7 @@
                                 </div>
                                 <div class="divDescription">
                                     <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partire de <strong>25€</strong></p>
+                                    <p>Nuit à partir de <strong>25€</strong></p>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
@@ -137,7 +140,7 @@
                                 </div>
                                 <div class="divDescription">
                                     <h3>Auberge le Panier</h3>
-                                    <p>Nuit à partire de <strong>23€</strong></p>
+                                    <p>Nuit à partir de <strong>23€</strong></p>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
                                     <i class="fas fa-star icone-blue"></i>
@@ -209,8 +212,8 @@
                 </section>
             </div>
         </main>
-        <section id="section2" >
-            
+        <section>
+          <div id="section2">    
             <article id="activités">
                 <h2>Activités à Marseille</h2>
              <div id="CartesActivités">
@@ -240,7 +243,7 @@
                 </div>
               </div>
             </article>
-
+          </div>
         </section>
     </div>
 
