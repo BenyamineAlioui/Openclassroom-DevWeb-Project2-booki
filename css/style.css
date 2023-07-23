@@ -918,6 +918,12 @@
         width: 170px;
     }
 
+    #CartesActivités .divImg img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -976,6 +982,23 @@
         color: #0065FC ;
     }
 
+    #section0{
+        padding: 0px 30px;
+    }
+
+    #section0 h2{
+        font-size: 19px;
+    }
+
+    #section0 p{
+        font-size: 14px;
+    }
+
+    .ZoneRecherche{
+        width: 170px;
+        font-size: 17px;
+    }
+
     .texteRecherche{
         display: none;
     }
@@ -1020,12 +1043,12 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         grid-template-areas: 
-        "carte1" 
-        "carte2"
+        "carte1"
+        "carte5"
         "carte3"
-        "carte4" 
-        "carte5" 
-        "carte6";
+        "carte4"
+        "carte6"
+        "carte2";
         margin-left: auto;
         margin-right: auto;
         padding:0px;
@@ -1075,4 +1098,12 @@
     
 
     
+}
+
+@media (max-width: 397px) {
+
+    .filtre1, .filtre2, .filtre3, .filtre4 {
+        margin-left: 0;
+    }
+
 }
