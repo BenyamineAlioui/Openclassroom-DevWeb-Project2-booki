@@ -916,6 +916,7 @@
 
     #CartesActivités .divDescription h3{
         width: 170px;
+        font-size: 14px;
     }
 
     #CartesActivités .divImg img{
@@ -997,6 +998,7 @@
     .ZoneRecherche{
         width: 170px;
         font-size: 17px;
+        border-right: 0;
     }
 
     .texteRecherche{
@@ -1005,6 +1007,14 @@
 
     .icone2{
         display: block;
+        border-radius: 19px;
+        position: relative;
+        right: 10px;
+    }
+
+    .fa-lg {
+        font-size: 1em;
+        padding-left: 2px;
     }
 
     #menufiltre{
