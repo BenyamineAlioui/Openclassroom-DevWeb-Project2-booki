@@ -80,6 +80,9 @@
 
  body{
     margin: 0;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
  }
 
 #nav 
@@ -1107,6 +1110,14 @@
     }
     
 
+    
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+
+    .filtre4 p{
+        margin-top: 0px;
+    }
     
 }
 
